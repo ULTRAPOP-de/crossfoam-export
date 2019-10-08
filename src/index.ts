@@ -1,5 +1,5 @@
-import * as cfData from "crossfoam-dev-data";
-import { downloadFile } from "crossfoam-dev-utils";
+import * as cfData from "@crossfoam/data";
+import { downloadFile } from "@crossfoam/utils";
 
 const exportFormats = [
   {

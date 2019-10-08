@@ -1,6 +1,6 @@
 {
   "name": "@crossfoam/export",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Data export module",
   "main": "dst/index.js",
   "scripts": {
@@ -38,7 +38,7 @@
     "web-ext-types": "^3.1.0"
   },
   "dependencies": {
-    "@crossfoam/data": "^1.0.0",
+    "@crossfoam/data": "^1.0.1",
     "@crossfoam/utils": "^1.0.1"
   }
 }

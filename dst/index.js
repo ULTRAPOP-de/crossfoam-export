@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var cfData = require("crossfoam-dev-data");
-var crossfoam_dev_utils_1 = require("crossfoam-dev-utils");
+var cfData = require("@crossfoam/data");
+var utils_1 = require("@crossfoam/utils");
 var exportFormats = [
     {
         description: browser.i18n.getMessage("exportGexfDesc"),
@@ -352,7 +352,7 @@ var exportNetwork = function (service, centralNode, nUuid, format) {
                 break;
         }
         return Promise.all(exportFiles.map(function (file) {
-            return crossfoam_dev_utils_1.downloadFile(file.fileData, file.fileType, file.fileName);
+            return utils_1.downloadFile(file.fileData, file.fileType, file.fileName);
         }));
     });
 };
