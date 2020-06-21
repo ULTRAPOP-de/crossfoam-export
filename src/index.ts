@@ -79,7 +79,7 @@ const defs = [
 ];
 
 const csvEncode = (str: string): string => {
-  if (str.indexOf(",")) {
+  if (typeof str === "string" && str.indexOf(",")) {
     return '"' + str + '"';
   }
   return str;

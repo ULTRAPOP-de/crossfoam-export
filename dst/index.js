@@ -79,7 +79,7 @@ var defs = [
     { id: 4, label: "isProxy", type: "boolean" },
 ];
 var csvEncode = function (str) {
-    if (str.indexOf(",")) {
+    if (typeof str === "string" && str.indexOf(",")) {
         return '"' + str + '"';
     }
     return str;
